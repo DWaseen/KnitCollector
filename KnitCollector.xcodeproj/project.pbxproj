@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340A6DF11DEE8926008B112C /* Teresa_Hat.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 340A6DF01DEE8926008B112C /* Teresa_Hat.JPG */; };
+		340A6DF31DEE8AF7008B112C /* KnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340A6DF21DEE8AF7008B112C /* KnitViewController.swift */; };
 		346B5E631DEC97160008E7A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346B5E621DEC97160008E7A1 /* AppDelegate.swift */; };
 		346B5E651DEC97160008E7A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346B5E641DEC97160008E7A1 /* ViewController.swift */; };
 		346B5E681DEC97160008E7A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346B5E661DEC97160008E7A1 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		340A6DF01DEE8926008B112C /* Teresa_Hat.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Teresa_Hat.JPG; sourceTree = "<group>"; };
+		340A6DF21DEE8AF7008B112C /* KnitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnitViewController.swift; sourceTree = "<group>"; };
 		346B5E5F1DEC97160008E7A1 /* KnitCollector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnitCollector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		346B5E621DEC97160008E7A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		346B5E641DEC97160008E7A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				346B5E621DEC97160008E7A1 /* AppDelegate.swift */,
+				340A6DF01DEE8926008B112C /* Teresa_Hat.JPG */,
 				346B5E641DEC97160008E7A1 /* ViewController.swift */,
+				340A6DF21DEE8AF7008B112C /* KnitViewController.swift */,
 				346B5E661DEC97160008E7A1 /* Main.storyboard */,
 				346B5E6C1DEC97160008E7A1 /* Assets.xcassets */,
 				346B5E6E1DEC97160008E7A1 /* LaunchScreen.storyboard */,
@@ -128,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				346B5E701DEC97160008E7A1 /* LaunchScreen.storyboard in Resources */,
+				340A6DF11DEE8926008B112C /* Teresa_Hat.JPG in Resources */,
 				346B5E6D1DEC97160008E7A1 /* Assets.xcassets in Resources */,
 				346B5E681DEC97160008E7A1 /* Main.storyboard in Resources */,
 			);
@@ -140,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340A6DF31DEE8AF7008B112C /* KnitViewController.swift in Sources */,
 				346B5E651DEC97160008E7A1 /* ViewController.swift in Sources */,
 				346B5E631DEC97160008E7A1 /* AppDelegate.swift in Sources */,
 				346B5E6B1DEC97160008E7A1 /* KnitCollector.xcdatamodeld in Sources */,
@@ -306,6 +314,7 @@
 				346B5E761DEC97160008E7A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
