@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KnitCollector/KnitViewController.swift"
-            timestampString = "502346636.824184"
+            timestampString = "503034944.094765"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "addTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>

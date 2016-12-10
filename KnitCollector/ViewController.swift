@@ -48,8 +48,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = UITableViewCell()
         let knit = knits[indexPath.row]
         cell.textLabel?.text = knit.title
-        cell.imageView?.image = UIImage(data: knit.image! as Data)
+        cell.imageView?.image = UIImage(data: knit.image as! Data)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        let knit = knits[indexPath.row]
+        performSegue(withIdentifier: "knitSegue", sender: knit)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! KnitViewController
+        nextVC.knit = sender as? Knits
     }
     
 } // end class viewController

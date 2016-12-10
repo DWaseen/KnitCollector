@@ -34,7 +34,7 @@
                     <navigationItem key="navigationItem" id="nvI-UR-yzm">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="wm6-RK-a7M">
                             <connections>
-                                <segue destination="bws-aH-yVC" kind="show" id="4Wv-Bw-54g"/>
+                                <segue destination="bws-aH-yVC" kind="show" identifier="knitSegue" id="4Wv-Bw-54g"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -102,6 +102,7 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addupdatebutton" destination="tMU-8a-Vzw" id="eTv-7c-IET"/>
                         <outlet property="knitImageView" destination="beZ-7z-PAk" id="gdz-3r-q64"/>
                         <outlet property="titleTextField" destination="RMp-3B-dgu" id="SW6-rH-hyv"/>
                     </connections>

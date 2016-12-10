@@ -14,13 +14,26 @@ class KnitViewController: UIViewController,  UIImagePickerControllerDelegate,  U
     
     @IBOutlet weak var titleTextField: UITextField!
     
+   
+    @IBOutlet weak var addupdatebutton: UIButton!
+    
     var knitPicker = UIImagePickerController()
+    var knit : Knits? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         knitPicker.delegate = self
+        
+        if knit != nil{
+            knitImageView.image = UIImage(data : knit!.image as! Data)
+            titleTextField.text = knit!.title
+            
+            addupdatebutton.setTitle("Update", for : .normal )
+        }
+        
+        
     }
 
 
