@@ -62,11 +62,33 @@ class KnitViewController: UIViewController,  UIImagePickerControllerDelegate,  U
     
     @IBAction func addTapped(_ sender: AnyObject) {
         
+        if knit != nil {
+            knit!.title = titleTextField.text
+            
+            knit!.image = UIImagePNGRepresentation(knitImageView.image!) as NSData!
+
+        }
+            
+        else {
+            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+            let knit = Knits(context: context)
+            knit.title = titleTextField.text
+            
+            knit.image = UIImagePNGRepresentation(knitImageView.image!) as NSData!
+            
+        }
+
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        
+        navigationController!.popViewController(animated: true)
+    }
+    
+    
+    @IBAction func deleteTapped(_ sender: AnyObject) {
+        
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        let knit = Knits(context: context)
-        knit.title = titleTextField.text
-     
-        knit.image = UIImagePNGRepresentation(knitImageView.image!) as NSData!
+        context.delete(knit!)
+        
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
         
         navigationController!.popViewController(animated: true)
