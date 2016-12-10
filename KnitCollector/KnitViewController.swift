@@ -14,6 +14,8 @@ class KnitViewController: UIViewController,  UIImagePickerControllerDelegate,  U
     
     @IBOutlet weak var titleTextField: UITextField!
     
+    @IBOutlet weak var deleteButton: UIButton!
+   
    
     @IBOutlet weak var addupdatebutton: UIButton!
     
@@ -31,6 +33,9 @@ class KnitViewController: UIViewController,  UIImagePickerControllerDelegate,  U
             titleTextField.text = knit!.title
             
             addupdatebutton.setTitle("Update", for : .normal )
+        }
+        else{
+            deleteButton.isHidden = true
         }
         
         

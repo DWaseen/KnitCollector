@@ -75,13 +75,21 @@
                                     <action selector="addTapped:" destination="bws-aH-yVC" eventType="touchUpInside" id="kVs-Xk-zEj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pf4-QW-YP9">
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="bws-aH-yVC" eventType="touchUpInside" id="ai0-9b-iWu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="beZ-7z-PAk" firstAttribute="top" secondItem="akm-Tj-571" secondAttribute="bottom" constant="20" id="A7E-ju-8gv"/>
                             <constraint firstItem="beZ-7z-PAk" firstAttribute="centerX" secondItem="sPs-yq-Lec" secondAttribute="centerX" id="AvQ-EF-bvw"/>
+                            <constraint firstItem="Pf4-QW-YP9" firstAttribute="centerX" secondItem="sPs-yq-Lec" secondAttribute="centerX" id="MdD-sn-yUY"/>
                             <constraint firstItem="RMp-3B-dgu" firstAttribute="top" secondItem="beZ-7z-PAk" secondAttribute="bottom" constant="40" id="crQ-V5-jS9"/>
                             <constraint firstItem="tMU-8a-Vzw" firstAttribute="centerX" secondItem="sPs-yq-Lec" secondAttribute="centerX" id="d9Z-1K-JkP"/>
+                            <constraint firstItem="Pf4-QW-YP9" firstAttribute="top" secondItem="tMU-8a-Vzw" secondAttribute="bottom" constant="12" id="hGb-c8-qIj"/>
                             <constraint firstItem="tMU-8a-Vzw" firstAttribute="top" secondItem="RMp-3B-dgu" secondAttribute="bottom" constant="20" id="idW-Br-EtP"/>
                             <constraint firstItem="RMp-3B-dgu" firstAttribute="width" secondItem="beZ-7z-PAk" secondAttribute="width" id="uZz-jw-J0b"/>
                             <constraint firstItem="RMp-3B-dgu" firstAttribute="centerX" secondItem="sPs-yq-Lec" secondAttribute="centerX" id="yNX-52-G4C"/>
@@ -103,6 +111,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addupdatebutton" destination="tMU-8a-Vzw" id="eTv-7c-IET"/>
+                        <outlet property="deleteButton" destination="Pf4-QW-YP9" id="mnv-ez-bfK"/>
                         <outlet property="knitImageView" destination="beZ-7z-PAk" id="gdz-3r-q64"/>
                         <outlet property="titleTextField" destination="RMp-3B-dgu" id="SW6-rH-hyv"/>
                     </connections>
