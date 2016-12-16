@@ -57,6 +57,9 @@ class KnitViewController: UIViewController,  UIImagePickerControllerDelegate,  U
     }
     
     @IBAction func cameraTapped(_ sender: AnyObject) {
+        
+        knitPicker.sourceType = .camera
+        present(knitPicker, animated: true, completion: nil)
     }
     
     

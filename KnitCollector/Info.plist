@@ -6,8 +6,8 @@
 	<string></string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>We want access to existing pictures so don&apos;t have to take another picture</string>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
+	<key>NSCameraUsageDescription</key>
+	<string>We want access to camera to load picture</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
